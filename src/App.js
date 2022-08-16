@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         
         <p>
-          Hola mundo
+          Antonella Estética
         </p>
         
       </header>
