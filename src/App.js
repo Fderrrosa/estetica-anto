@@ -1,27 +1,19 @@
-import React from 'react';
-import './App.css';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
+import Main from './components/Main/Main';
 
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
 
-        
-        <p>
-          Antonella Estética
-        </p>
-        <a
-        className="App-link"
-        href="https://reactjs.org"
-        target="_blank"
-        rel="noopener noreferrer"
-        >
-          Lear React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+return (
+    <>
+        <Header/>
+         <Main/>
+       <Footer/>
 
-export default App;
+    </>
+ 
+);
+};
+
+export default App
