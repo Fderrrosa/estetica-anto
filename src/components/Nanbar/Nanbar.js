@@ -1,9 +1,11 @@
 import React from 'react'
+import './nanbar.css'
+
 
 const Nanbar = () => {
   return (
     <nav>
-    <ul>
+    <ul className='list'>
         <li>
         <a href="https://www.instagram.com/_antonellaesteticaydepi/?igshid=YmMyMTA2M2Y%3D">Productos </a>
         </li>

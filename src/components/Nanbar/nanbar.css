@@ -1,0 +1,5 @@
+.list{
+    display: flex;
+    justify-content: space-evenly;
+    color: rgba(233, 149, 119, 0.986);
+}

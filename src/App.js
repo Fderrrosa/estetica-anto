@@ -8,7 +8,7 @@ const App = () => {
 return (
     <>
         <Header/>
-         <Main/>
+         <Main test="Probando las propiedades"/>
        <Footer/>
 
     </>

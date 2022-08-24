@@ -1,9 +1,10 @@
 //import Nanbar from "../Nanbar/Nanbar";
+import './footer.css'
 
 const Footer = () =>{
     return (
-        <footer>
-            <h5>Francesco De Rosa</h5>
+        <footer className="footer-">
+            <h5 >Francesco De Rosa</h5>
 
         </footer>
 
