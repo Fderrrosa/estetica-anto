@@ -1,5 +1,12 @@
 .list{
-    display: flex;
-    justify-content: space-evenly;
+    display: flex !important;
     color: rgba(233, 149, 119, 0.986);
+}
+nav ul li{
+    margin: 0px 10px;;
+}
+.nav-nav{
+    display: flex !important;
+    justify-content: space-between;
+ 
 }

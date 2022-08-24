@@ -1,9 +1,8 @@
 import React from 'react';
 import './main.css';
 
-const Main = (props) => {
-  //console.log(props);
-  console.log(props.test);
+const Main = () => {
+  
   return (
     <main className='contenedor-main'>
         <section>

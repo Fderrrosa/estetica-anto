@@ -1,4 +1,4 @@
-import Nanbar from "../Nanbar/Nanbar";
+import Nanbar from "../../Nanbar/Nanbar";
 
 const Header = () =>{
     return(
