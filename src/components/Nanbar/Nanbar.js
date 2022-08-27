@@ -16,6 +16,7 @@ const Nanbar = () => {
         <a href="https://www.instagram.com/_antonellaesteticaydepi/?igshid=YmMyMTA2M2Y%3D">Contacto</a>
         </li>
     </ul>
+    
     <CartWidget/>
 </nav>
   )
