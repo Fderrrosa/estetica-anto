@@ -1,23 +1,28 @@
 import React from 'react';
+import Counter from '../Counter/Counter';
 import { products } from '../mock/products';
-import { ItemList } from '../ItemList/ItemList';
 
 
-export const Item = () => {
+
+
+const Item = ( {id, title, price, category, img, stock}) => {
     return (
          <div>
-            <h4 id={products.title}>Hols</h4>
+            <h4> {title}</h4>
             <div>
-                <img src={products.img} alt="" />
+                <img src={img} className="img" alt="" />
             </div>
-            <p>{products.price} $</p>
-            <p>Stock: {products.stock}</p>
-            
+            <p>{price} $</p>
+            <p>Stock: {stock} </p>
+            <Counter stock={3} />
         </div>
+        
     )
 }
 
 
+
+export default Item
 
 
 

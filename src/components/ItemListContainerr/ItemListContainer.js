@@ -1,13 +1,12 @@
-import React, { useState, useEffect } from 'react'
-import './itemlistcontainer.css'
-import { products } from '../mock/products'
-import { ItemList } from '../ItemList/ItemList';
+import React, { useState, useEffect } from 'react';
+import './itemlistcontainer.css';
+import { products } from '../mock/products';
+import ItemList from '../ItemList/ItemList';
+import Counter from '../Counter/Counter';
 
 
-
-
-const ItemListContainer = ({ saludo }) => {
-    const [Items, setItems] = useState([])
+const ItemListContainer = () => {
+    const [items, setItems] = useState([])
 
     const getProducts = () => new Promise ((resolve, reject) => {
         setTimeout(() => resolve(products), 2000)
@@ -18,19 +17,17 @@ const ItemListContainer = ({ saludo }) => {
         .catch(error => console.log(error))
     }, [])
 
+        //{console.log(items)
     return (
-        <ItemList Items={Items}/>
-    )
+        <>
+        {items.length > 0 && <ItemList items={items}/>}
+        </>
 
+    )
 
 }
 
-
-
-export default ItemListContainer;
-
-
-
+export default ItemListContainer
 
 
 
@@ -94,4 +91,4 @@ const ItemListContainer = ({ saludo }) => {
      */
 
 
-export default ItemListContainer
+//export default ItemListContainer

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './counter.css';
-
+/*
 const Counter = ({stock, inicial, onAdd}) => {
   
   const[count, setCount] = useState(inicial);
@@ -32,7 +32,7 @@ const Counter = ({stock, inicial, onAdd}) => {
    
 
   return (
-    <div>
+   <div>
         <button className='count-' onClick={sumar}>+</button>
         <button className='count-' onClick={restar}>-</button>
         <button className='ST-' disabled={count <= -0} onClick={SolicitarT}>Solicitar turno/s</button>
@@ -40,6 +40,32 @@ const Counter = ({stock, inicial, onAdd}) => {
 
     </div>
   )
+}*/
+
+
+
+const Counter = ({stock, initial = 1, onAdd}) => {
+  const [counter, setCounter] = useState(initial)
+
+  const addCounter = () => {
+      counter < stock && setCounter( counter + 1 )
+  }
+
+  const subtractCounter = () => {
+      counter > initial && setCounter( counter - 1 )
+  }
+  
+  
+return (
+  <div >
+      <p>{counter}</p>
+      <div>
+          <button onClick={subtractCounter}>-</button>
+          <button onClick={addCounter}>+</button>
+          <button className='ST-'>Solicitar turno/s</button>
+      </div>
+  </div>
+)
 }
 
 export default Counter

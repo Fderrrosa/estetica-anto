@@ -3,8 +3,6 @@ import Footer from './components/Footer/Footer';
 import Main from './components/Main/Main';
 import ItemListContainer from './components/ItemListContainerr/ItemListContainer';
 import Counter from './components/Counter/Counter';
-import Item from './Item/Item';
-
 
 
 const App = () => {
@@ -13,12 +11,14 @@ const App = () => {
       console.log("este boton sirve para agregar al carrito")
     }
 
+    
+    
 
 return (
     <>
         <Header/>
          <Main />
-        <ItemListContainer saludo='Que tal gente!' />
+        <ItemListContainer />
        
         <Counter stock={3} inicial={0} onAdd={onAdd}/>
        <Footer/>

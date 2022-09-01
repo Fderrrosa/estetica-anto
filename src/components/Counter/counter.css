@@ -5,3 +5,8 @@
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   background-color:  rgba(233, 149, 119, 0.986);
 }
+
+.ST-:hover{
+  background-color: aqua;
+  cursor: pointer;
+}
