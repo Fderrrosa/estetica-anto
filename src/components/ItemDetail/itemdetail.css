@@ -1,0 +1,14 @@
+.infoimg{
+   display: flex;
+   flex-direction: row;
+    height: 500px;
+    width: 500px;
+    position: relative;
+    margin: 40px;
+}
+.infodata{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+    display: flex;
+    justify-content: flex-start;
+    letter-spacing: normal;
+}

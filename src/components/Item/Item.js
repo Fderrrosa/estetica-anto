@@ -1,16 +1,17 @@
 import React from 'react';
 import Counter from '../Counter/Counter';
-import { products } from '../mock/products';
+import './item.css';
+//import { products } from '../mock/products';
 
 
 
 
 const Item = ( {id, title, price, category, img, stock}) => {
     return (
-         <div>
+         <div className='products'>
             <h4> {title}</h4>
-            <div>
-                <img src={img} className="img" alt="" />
+            <div >
+                <img src={img} className="img." alt="" />
             </div>
             <p>{price} $</p>
             <p>Stock: {stock} </p>

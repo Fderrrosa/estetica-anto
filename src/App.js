@@ -3,6 +3,7 @@ import Footer from './components/Footer/Footer';
 import Main from './components/Main/Main';
 import ItemListContainer from './components/ItemListContainerr/ItemListContainer';
 import Counter from './components/Counter/Counter';
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 
 
 const App = () => {
@@ -19,7 +20,7 @@ return (
         <Header/>
          <Main />
         <ItemListContainer />
-       
+       <ItemDetailContainer/>
         <Counter stock={3} inicial={0} onAdd={onAdd}/>
        <Footer/>
 
