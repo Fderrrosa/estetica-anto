@@ -6,7 +6,7 @@ export const products = [
         title: 'Limplieza de cutis',
         price: 3000,
         stock: 3,
-        category: 'Face',
+        category: 'face',
         img: 'https://res.cloudinary.com/dngbc9awr/image/upload/v1661611709/Anto-est%C3%A9tica/servicios_estetica_limpieza_qqwpze.jpg',
     },
     {
@@ -14,7 +14,7 @@ export const products = [
         title: 'Depilacion definitiva',
         price: 2500,
         stock: 3,
-        category: 'Body',
+        category: 'depilacion',
         img: 'https://res.cloudinary.com/dngbc9awr/image/upload/v1661966536/Anto-est%C3%A9tica/depilacion-laser_fsxidb.jpg',
     },
      {
@@ -22,7 +22,7 @@ export const products = [
         title: 'Drenaje linfatico manual',
         price: 4500,
         stock: 3,
-        category: 'Body',
+        category: 'body',
         img: 'https://res.cloudinary.com/dngbc9awr/image/upload/v1661966532/Anto-est%C3%A9tica/151107-massage-800x500_k1otfq.jpg',
     }
 ]

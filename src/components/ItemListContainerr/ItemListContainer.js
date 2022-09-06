@@ -1,23 +1,45 @@
 import React, { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 import './itemlistcontainer.css';
 import { products } from '../mock/products';
 import ItemList from '../ItemList/ItemList';
-import Counter from '../Counter/Counter';
+//import Counter from '../Counter/Counter';
 
 
 const ItemListContainer = () => {
-    const [items, setItems] = useState([])
+    const [items, setItems] = useState([]);
 
-    const getProducts = () => new Promise ((resolve, reject) => {
-        setTimeout(() => resolve(products), 2000)
-    })
+
+
+    const { categoryName } = useParams();
+
     useEffect(() => {
+        const getProducts = () =>
+        new Promise ((res, rej) => {
+            const prodFiltrados = products.filter(
+                (prod) => prod.category === categoryName
+            );
+            setTimeout(() => {
+                res(categoryName ? prodFiltrados : products);
+            }, 500);
+        });
         getProducts()
-        .then(products => setItems(products))
-        .catch(error => console.log(error))
-    }, [])
+        .then((data) =>{
+            setItems(data);
+        })
+        .catch((error)=>{
+            console.log(error);
+        });
+    }, [categoryName]);
+    
 
-        //{console.log(items)
+
+
+   
+
+
+
+
     return (
         <>
         {items.length > 0 && <ItemList items={items}/>}

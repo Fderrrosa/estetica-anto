@@ -1,23 +1,25 @@
 import React from 'react'
 import './nanbar.css'
 import CartWidget from './CartWidget'
+import { Link } from 'react-router-dom';
 
 const Nanbar = () => {
   return (
     <nav className='nav-nav'>
+
+      <Link to="/">Inicio</Link>
     <ul className='list'>
-        <li>
-        <a href="https://www.instagram.com/_antonellaesteticaydepi/?igshid=YmMyMTA2M2Y%3D">Productos </a>
-        </li>
-        <li>
-        <a href="https://www.instagram.com/_antonellaesteticaydepi/?igshid=YmMyMTA2M2Y%3D">Nosotros </a>
-        </li>
-        <li>
-        <a href="https://www.instagram.com/_antonellaesteticaydepi/?igshid=YmMyMTA2M2Y%3D">Contacto</a>
-        </li>
+      <Link to="/category/depilacion">Depilacion</Link>
+
+      <Link to="/category/face">Face</Link>
+
+      <Link to="/category/body">Body</Link>
+       
     </ul>
-    
+    <Link to="./nanbar">
     <CartWidget/>
+    </Link>
+  
 </nav>
   )
 }

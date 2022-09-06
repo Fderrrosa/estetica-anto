@@ -2,31 +2,55 @@ import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import Main from './components/Main/Main';
 import ItemListContainer from './components/ItemListContainerr/ItemListContainer';
-import Counter from './components/Counter/Counter';
+//import Counter from './components/Counter/Counter';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Nanbar from './components/Nanbar/Nanbar';
 
 
 const App = () => {
+    return(
+    <BrowserRouter>
+          <Header />
+          <Main/>
+        <Routes>
+            <Route 
+            path='/' 
+            element={<ItemListContainer />} 
+            />
 
-    const onAdd = () =>{
-      console.log("este boton sirve para agregar al carrito")
-    }
+            
 
-    
-    
+            <Route 
+            path='./detail/idProd'
+            element={<ItemDetailContainer/>}
+            />
 
-return (
-    <>
-        <Header/>
-         <Main />
-        <ItemListContainer />
-       <ItemDetailContainer/>
-        <Counter stock={3} inicial={0} onAdd={onAdd}/>
-       <Footer/>
+           <Route
+           path='./nanbar' 
+           element={<Nanbar/>}
+            />
 
-    </>
- 
-);
+            <Route
+            path='/category/:categoryName'
+            element={<ItemListContainer/>}
+            />
+
+           </Routes>
+          
+
+
+          <Footer/>
+    </BrowserRouter>
+    );
 };
 
-export default App
+export default App;
+
+
+
+
+
+
+
+//<Counter stock={3} inicial={0} onAdd={onAdd}/>
