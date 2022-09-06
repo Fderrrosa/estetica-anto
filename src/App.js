@@ -22,7 +22,7 @@ const App = () => {
             
 
             <Route 
-            path='./detail/idProd'
+            path='/detail/:id'
             element={<ItemDetailContainer/>}
             />
 
