@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './counter.css';
+
 /*
 const Counter = ({stock, inicial, onAdd}) => {
   
@@ -60,7 +61,7 @@ return (
   <div >
       <p>{counter}</p>
       <div>
-          <button onClick={subtractCounter}>-</button>
+      <button onClick={subtractCounter}>-</button>
           <button onClick={addCounter}>+</button>
           <button className='ST-'>Solicitar turno/s</button>
       </div>

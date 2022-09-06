@@ -1,16 +1,22 @@
 import React from 'react'
-import './itemdetail.css';
+import Counter from '../Counter/Counter';
+//import './itemdetail.css';
+import '../Item/item.css';
+
+
+
 
 const ItemDetail = ({ item }) => {
   return (
-    <div className='infoimg'>
+    <div className='products'>
         <img  src={item.img} alt={item.title} />
-        <div>
-        <h1    className='infodata' >{item.title} </h1>
+        <div className='datos'>
+        <h4 className='infodata' >{item.title} </h4>
         <p className='infodata'> Precio: {item.price} </p>
         <p className='infodata'>Categoria: {item.category} </p>
-      
+        <Counter />
         </div>
+        
     </div>
   )
 }

@@ -1,11 +1,77 @@
+
+
+
 .products{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    box-shadow:  0 0 0 5px;
-    margin: 10px;
+    justify-content: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+    box-shadow: 3px 3px 15px 1px rgb(158, 158, 158) ;
+    margin: 20px 30px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
 }
+
+.products:hover {
+    box-shadow:3px 3px 15px 1px rgb(98, 98, 98) ;
+}
+
+
+.products img {
+    width: 200px;
+    border-bottom: 4px solid #1818183d;
+    border-top-left-radius: 10px;
+    border-top-right-radius:10px;
+}
+
+
+
+
+.datos{
+    display: flex;
+    padding: 10px;
+   
+}
+
+
+.datos h4{
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+.datos p{
+    display: inline-block;
+    border-radius: 8px;
+    font-weight: 100;
+    margin-bottom: 7px;
+}
+
+.datos h3{
+    display: flex;
+    justify-content: flex-start;
+    letter-spacing: normal;
+    position: relative;
+    margin: 40px;
+}
+
+.datos button{
+    display: flex;
+    margin-top: 5px;
+    border-radius: 8px;
+    padding: 8px 12px;
+    border: 2px solid #181818;
+    background-color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.datos button:hover{
+    background-color: #181818;
+    color: white;
+}
+
+
+/*
 
 .imgx{
     display: flex;
@@ -14,3 +80,10 @@
     width: 500px;
     position: relative;
 }
+
+
+display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    box-shadow:  0 0 0 5px;
+    margin: 10px;*/
