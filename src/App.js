@@ -5,16 +5,14 @@ import ItemListContainer from './components/ItemListContainerr/ItemListContainer
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Nanbar from './components/Nanbar/Nanbar';
-import Counter from './components/Counter/Counter';
+
 
 
 
 
 
 const App = () => {
-    const onAdd =(param) => {
-        console.log(param);
-    };
+    
 
   return(
     <BrowserRouter>
@@ -45,7 +43,7 @@ const App = () => {
 
            </Routes>
         
-           <Counter stock={3} inicial={0} onAdd={onAdd}/>
+           
 
           <Footer/>
     </BrowserRouter>

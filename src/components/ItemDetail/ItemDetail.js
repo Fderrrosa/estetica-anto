@@ -1,16 +1,12 @@
 import React from 'react'
-import Counter from '../Counter/Counter';
-//import './itemdetail.css';
 import '../Item/item.css';
-
-
+import Counter from '../Counter/Counter';
 
 
 const ItemDetail = ({ item }) => {
   const onAdd = (param) => {
     console.log(param);
   };
-  
   return (
     <div className='products'>
         <img  src={item.img} alt={item.title} />
@@ -20,8 +16,7 @@ const ItemDetail = ({ item }) => {
         <p className='infodata'>Categoria: {item.category} </p>
         <Counter  stock={3} inicial={0} onAdd={onAdd}/>
         </div>
-        
-    </div>
+      </div>
   )
 }
 
