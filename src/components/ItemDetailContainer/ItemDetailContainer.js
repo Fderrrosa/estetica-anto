@@ -2,13 +2,19 @@ import { useEffect, useState } from "react";
 import ItemDetail from "../ItemDetail/ItemDetail";
 import { products } from "../mock/products";
 import { useParams } from "react-router-dom";
-//import Item from "../Item/Item";
+
+
+
+
+
 
 
 
 
 const ItemDetailContainer = () =>{
-    const [item, setItem] = useState([])
+
+    
+    const [item, setItem] = useState({})
 
 
 const { id } = useParams();
@@ -31,10 +37,15 @@ const { id } = useParams();
 
     return(
     <div>
-        <ItemDetail item={item}/>
+        <ItemDetail item={item} />
+        
         </div>
     )
 }
-    export default ItemDetailContainer
+    export default ItemDetailContainer 
 
-    // <ItemDetail item={item}/>
+
+
+
+//import Item from "../Item/Item";
+// <ItemDetail item={item}/>

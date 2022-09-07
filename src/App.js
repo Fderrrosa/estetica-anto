@@ -2,18 +2,25 @@ import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import Main from './components/Main/Main';
 import ItemListContainer from './components/ItemListContainerr/ItemListContainer';
-//import Counter from './components/Counter/Counter';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Nanbar from './components/Nanbar/Nanbar';
+import Counter from './components/Counter/Counter';
+
+
+
 
 
 const App = () => {
-    return(
+    const onAdd =(param) => {
+        console.log(param);
+    };
+
+  return(
     <BrowserRouter>
           <Header />
           <Main/>
-        <Routes>
+         <Routes>
             <Route 
             path='/' 
             element={<ItemListContainer />} 
@@ -37,8 +44,8 @@ const App = () => {
             />
 
            </Routes>
-          
-
+        
+           <Counter stock={3} inicial={0} onAdd={onAdd}/>
 
           <Footer/>
     </BrowserRouter>
@@ -52,5 +59,5 @@ export default App;
 
 
 
-
+//import Counter from './components/Counter/Counter';
 //<Counter stock={3} inicial={0} onAdd={onAdd}/>

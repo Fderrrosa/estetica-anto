@@ -70,20 +70,7 @@
     color: white;
 }
 
-
-/*
-
-.imgx{
-    display: flex;
-    justify-content: space-evenly;
-    height: 500px;
-    width: 500px;
-    position: relative;
+.bot.prod{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+    color: grey;
 }
-
-
-display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    box-shadow:  0 0 0 5px;
-    margin: 10px;*/
