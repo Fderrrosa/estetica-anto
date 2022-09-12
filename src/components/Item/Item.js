@@ -25,7 +25,7 @@ const Item = ( { item }) => {
              
             </div> 
         </div>
-        )}
+        )};
 
 
 export default Item

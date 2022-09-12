@@ -1,10 +1,15 @@
 import React from 'react'
 import './nanbar.css'
-import CartWidget from './CartWidget'
 import { Link } from 'react-router-dom';
+import CartWidget from './CartWidget';
+
+
+
 
 const Nanbar = () => {
   return (
+    
+   
     <nav className='nav-nav'>
 
       <Link to="/">Inicio</Link>
@@ -16,11 +21,17 @@ const Nanbar = () => {
       <Link to="/category/body">Body</Link>
        
     </ul>
-    <Link to="./nanbar">
-    <CartWidget/>
+
+
+    <Link to="/cart">
+      <CartWidget />
     </Link>
+
+
+    
   
 </nav>
+
   )
 }
 

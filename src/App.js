@@ -5,8 +5,7 @@ import ItemListContainer from './components/ItemListContainerr/ItemListContainer
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Nanbar from './components/Nanbar/Nanbar';
-
-
+import Cart from './components/Cart/Cart';
 
 
 
@@ -16,9 +15,9 @@ const App = () => {
 
   return(
     <BrowserRouter>
-          <Header />
+          <Header/>
           <Main/>
-         <Routes>
+          <Routes>
             <Route 
             path='/' 
             element={<ItemListContainer />} 
@@ -33,7 +32,7 @@ const App = () => {
 
            <Route
            path='./nanbar' 
-           element={<Nanbar/>}
+           element={<Nanbar />}
             />
 
             <Route
@@ -41,9 +40,16 @@ const App = () => {
             element={<ItemListContainer/>}
             />
 
+
+              <Route
+            path='/cart'
+            element={<Cart />}
+            />
+
+
            </Routes>
         
-           
+          
 
           <Footer/>
     </BrowserRouter>
