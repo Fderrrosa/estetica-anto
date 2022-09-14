@@ -6,6 +6,7 @@ import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailCont
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Nanbar from './components/Nanbar/Nanbar';
 import Cart from './components/Cart/Cart';
+import CartProvider from './context/CartContext';
 
 
 
@@ -14,6 +15,7 @@ const App = () => {
     
 
   return(
+    <CartProvider>
     <BrowserRouter>
           <Header/>
           <Main/>
@@ -53,6 +55,7 @@ const App = () => {
 
           <Footer/>
     </BrowserRouter>
+    </CartProvider>
     );
 };
 

@@ -9,7 +9,7 @@
 }
 .infodata{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
-    display: flex;
+    display: flex !important;
     justify-content: flex-start;
     letter-spacing: normal;
 }

@@ -34,12 +34,14 @@
 
 
 .datos h4{
+    display: inline-block;
+
     margin-bottom: 10px;
     text-decoration: underline;
 }
 
 .datos p{
-    display: inline-block;
+   display: inline-block;
     border-radius: 8px;
     font-weight: 100;
     margin-bottom: 7px;
