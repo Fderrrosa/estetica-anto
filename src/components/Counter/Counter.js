@@ -1,10 +1,18 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './counter.css';
 
 
-const Counter = ({ stock, onAdd, inicial }) => {
+const Counter = ({ stock, onAdd, inicial = 0}) => {
   
   const[count, setCount] = useState(inicial);
+
+
+
+
+    useEffect(() => {
+      setCount(inicial);
+    }, [inicial]);
+
       
     const sumar = () =>{count < stock && setCount(count + 1);}
 

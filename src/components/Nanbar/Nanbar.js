@@ -14,6 +14,8 @@ const Nanbar = () => {
 
       <Link to="/">Inicio</Link>
     <ul className='list'>
+
+      
       <Link to="/category/depilacion">Depilacion</Link>
 
       <Link to="/category/face">Face</Link>
