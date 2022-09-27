@@ -65,6 +65,3 @@ export default App;
 
 
 
-
-//import Counter from './components/Counter/Counter';
-//<Counter stock={3} inicial={0} onAdd={onAdd}/>

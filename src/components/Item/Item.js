@@ -34,28 +34,9 @@ export default Item
 
 
 
-//import Counter from '../Counter/Counter';
-//import ItemList from '../ItemList/ItemList';
-//import { products } from '../mock/products';
-//id, title, price, category, img
 
 
-//import Counter from '../Counter/Counter';
-//import ItemList from '../ItemList/ItemList';
-//import { products } from '../mock/products';
-//id, title, price, category, img
 
 
-/*const Item = ({products}) => {
-    return (
-        <div>
-            <h4>{title}</h4>
-            <div>
-                <img src={img} alt="" />
-            </div>
-            <p>{price} $</p>
-            <p>Stock: {stock}</p>
-        </div>
-    )
-}
-*/
+
+

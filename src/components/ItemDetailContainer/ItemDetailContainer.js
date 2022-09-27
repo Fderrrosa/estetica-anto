@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 import { db } from '../../firebaseConfig';
 import { getDoc, doc, collection } from "firebase/firestore";
 
-//import { products } from "../mock/products";
+
 
 const ItemDetailContainer = () =>{
 
@@ -39,19 +39,6 @@ const { id } = useParams();
 
 
 
-/*const getProduct = () => new Promise((res, rej )=> {
-
-          const oneProduct = products.find((prod)=> prod.id === id)
-               setTimeout(()=>{res(id ? oneProduct : products)}, 1000)
-        })
-        getProduct()
-        .then((info)=>{
-            setItem(info);
-        })
-        .catch((error)=>{
-            console.log(error);
-        });
-*/        
 
 
 
@@ -59,13 +46,3 @@ const { id } = useParams();
 
 
 
-
-
-
-
-
-
-
-
-//import Item from "../Item/Item";
-// <ItemDetail item={item}/>

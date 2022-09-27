@@ -34,7 +34,14 @@ export default Counter;
 
 
 
-/*setCount(count - 1);
+
+
+
+
+
+//COMENTARIOS
+/*
+setCount(count - 1);
 const Counter = ({stock, inicial, onAdd}) => {
   
   const[count, setCount] = useState(inicial);

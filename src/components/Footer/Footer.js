@@ -1,4 +1,3 @@
-//import Nanbar from "../Nanbar/Nanbar";
 import './footer.css'
 
 const Footer = () =>{

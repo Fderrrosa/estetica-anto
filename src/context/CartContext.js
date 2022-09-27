@@ -20,12 +20,13 @@ const CartProvider = ({ children }) => {
     };
 
 
-   // corroborando si el servicio ya está en el carrito
+   
    const isInCart = (id) => {
     return cart.some((prod) => prod.id === id);
    };
 
-  // sumando la cantidad del mismo servicio
+ 
+
  const totalQuantitySingleProduct = (item, cantidad) => {
     const carritoActualizado = cart.map((prod) => {
         if (prod.id === item.id) {
@@ -43,7 +44,7 @@ const CartProvider = ({ children }) => {
 
 
 
-//eliminar un solo servicio pasandole el id
+
 const eliminarProd = (id) => {
     console.log(`eliminando producto ${id}`);
     const carritoFiltrado = cart.filter((prod) => prod.id !== id);
@@ -51,14 +52,14 @@ const eliminarProd = (id) => {
 };
 
 
- //vaciar todo el carrito
+ 
  const clearCart = () => {
     setCart([]);
 };
 
 
 
-//calcular total de unicades para el cart widget
+
 const totalQuantity = () => {
     let acumulador = 0;
     cart.forEach((prod) => {
@@ -70,7 +71,7 @@ const totalQuantity = () => {
 
 
 
-//calcular total precio del carrito
+
 const totalPrice = () => {
     let acumulador = 0;
     cart.forEach((prod) => {

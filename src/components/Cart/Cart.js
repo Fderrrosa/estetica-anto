@@ -12,7 +12,7 @@ const Cart = () => {
   const { cart, eliminarProd, clearCart, totalPrice } = useContext(CartContext);
 
   const total = totalPrice();
-  //console.log(cart);
+ 
   
   const handleId = (id) => {
     setIdCompra(id)
