@@ -9,8 +9,6 @@ import { db } from '../../firebaseConfig';
 
 
 
-//import { CartContext } from '../../context/CartContext';
-//import Cart from '../Cart/Cart';
 
 
 const Form = ({ cart, total, handleId, clearCart }) => {

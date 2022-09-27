@@ -24,5 +24,26 @@ export const products = [
         stock: 3,
         category: 'body',
         img: 'https://res.cloudinary.com/dngbc9awr/image/upload/v1661966532/Anto-est%C3%A9tica/151107-massage-800x500_k1otfq.jpg',
+    },
+
+    {
+        id: 'cuatro',
+        title: 'Masaje Descontracturante',
+        price: 4500,
+        stock: 3,
+        category: 'body',
+        img: 'https://res.cloudinary.com/dngbc9awr/image/upload/v1664153803/Anto-est%C3%A9tica/masaje-constracturante_cqvp5n.jpg',
+    },
+    {
+        id: 'cinco',
+        title: 'Criofecuencia + Himfu',
+        price: 5000,
+        stock: 3,
+        category: 'body',
+        img: 'https://res.cloudinary.com/dngbc9awr/image/upload/v1664153803/Anto-est%C3%A9tica/criofrecuencia-himfu_xmatiw.jpg',
     }
+
+
+
+
 ]
